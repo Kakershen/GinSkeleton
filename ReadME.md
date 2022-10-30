@@ -5,6 +5,20 @@
 -   4.<font color=#FF4500>本项目骨架从V1.4.00开始，要求go语言版本必须 >=1.15，才能稳定地使用gorm v2读写分离方案,go1.15下载地址：https://studygolang.com/dl </font>
 -   5.该版本定位为主线版本,总体追求简洁、无界面，没有太多的业务逻辑，适合开发者自己随意扩展.
 
+### 启动项目
+启动项目
+本项目的根目录就是 go.mod 所在的目录，开发者可以通过命令启动，也可以通过 goland 快速启动，
+本项目骨架有三个入口，命令启动方式需要进入根目录，选择其中一个入口启动：
+ ```
+ go run cmd/web/main.go  ： 一般是后台服务相关的接口，例如：admin系统等
+ ```
+ ```
+ go run cmd/api/main.go ：门户网站接口，主要是针对前台，提供数据查询、展示等服务类接口
+ ```
+ ```
+ go run cmd/cli/main.go ： 命令模式入口，开发黑窗口这种命令时使用的模式.
+ ```
+
 ### [GinSkeleton 新版在线文档](https://www.yuque.com/xiaofensinixidaouxiang/bkfhct/mar1g7)
 - 1.我们花费了极大的精力编写了非常完整、高质量的文档,初学者优先从如何使用学起, 成熟的开发者可以与我们一起研究 gin 内核源码,成为 gin 框架的高级开发.
 - 2.学习 GinSkeleton 您只需要关注主线即可,我们没有创造太多新的语法,只要您会使用 gin 就可以迅速上手 Ginskeleton .
